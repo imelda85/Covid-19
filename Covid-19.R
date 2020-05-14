@@ -50,7 +50,7 @@ ui<-navbarPage("Dashboard",
                           sidebarPanel(DT::dataTableOutput("table1"),
                                        downloadButton("downloadData",
                                                       "Download Data Here",
-                                                      href = "")),
+                                                      href = "https://github.com/imelda85/Covid-19/blob/master/Covid-19.csv")),
                           mainPanel(tableOutput("table1`")))),
                                       
                tabPanel("Visualization",
@@ -64,7 +64,7 @@ ui<-navbarPage("Dashboard",
                           sidebarPanel(
                             downloadButton("downloadCode", 
                                            "Download Code and Data Here", 
-                                           href = "")),
+                                           href = "https://github.com/imelda85/Covid-19/blob/master/Covid-19.R")),
                           mainPanel(tableOutput("table"))))
 )
 
